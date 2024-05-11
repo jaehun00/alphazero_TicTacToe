@@ -39,7 +39,7 @@ Pytorch 와 CUDA를 활용하여 Tic Tac Toe 모델을 직접 훈련시키고 �
    self_play.py
   - self_play : 각 게임의 결과 history 리스트에 저장
   
-  train_network.py
+  train.py
   - DataLoader : Tic Tac Toe Dataset 로드
   - LossFunction : MSELoss <= CrossEntropy, Value 예측
   - Optimizer : Adam
@@ -48,7 +48,20 @@ Pytorch 와 CUDA를 활용하여 Tic Tac Toe 모델을 직접 훈련시키고 �
   - evaluate_network : 모델 평가
   - update_best_player : 가장 좋은 모델 가중치 업데이트
     
-  train.py
+  train_cycle.py
   - train을 위한 함수
 
+  human_play.py
+  - tic tac toe GUI, tkinter 사용
+
 # 모델 학습
+-----
+
+     python train_cycle.py
+
+# tic tac toe PLAY
+----
+
+    python humna_play.py
+
+Submit 버튼을 누른 뒤 터미널 창에 좌표값 입력(1~9)
