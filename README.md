@@ -34,20 +34,21 @@ Pytorch 와 CUDA를 활용하여 Tic Tac Toe 모델을 직접 훈련시키고 �
   - pv_mcts_action : 다음수를 결정하는 함수를 반환
 
    data.py
-  -TicTacToeDataset: 입력 : (2,3,3)의 보드 상태, 출력 : 정책(policies),가치(value)
+  - TicTacToeDataset: 입력 : (2,3,3)의 보드 상태, 출력 : 정책(policies),가치(value)
   
    self_play.py
   - self_play : 각 게임의 결과 history 리스트에 저장
   
   train_network.py
- evaluate_network.py
+  - DataLoader : Tic Tac Toe Dataset 로드
+  - LossFunction : MSELoss <= CrossEntropy, Value 예측
+  - Optimizer : Adam
+ 
+  evaluate_network.py
   - evaluate_network : 모델 평가
   - update_best_player : 가장 좋은 모델 가중치 업데이트
-  - 
-  8. train.py
-- DataLoader:TicTacToerDataset을사용하여학습데이터로드및배치처리설정
-- LossFunction:Policy에대한예측을위해CrossEntropy와Value예측을위해MSELoss를사용- Optimizer:Adam활용
-- train.py:self_play함수를통해self_count만큼진행하고이후train_network를통해self_play한
-데이터로부터학습하여evaluate_best_player를통해가장좋은모델의가중치를뽑아냄
-- evaluate_network:모델을평가
-- update_best_player:가장좋은모델가중치를업데이트하기위한함수
+    
+  train.py
+  - train을 위한 함수
+
+# 모델 학습
