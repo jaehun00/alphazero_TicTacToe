@@ -33,14 +33,14 @@ Pytorch 와 CUDA를 활용하여 Tic Tac Toe 모델을 직접 훈련시키고 �
   - pv_mcts_scores : 주어진 게임상태에 대해 MCTS 행동에 대한 점수 계산
   - pv_mcts_action : 다음수를 결정하는 함수를 반환
 
-  4. data.py
+   data.py
   -TicTacToeDataset: 입력 : (2,3,3)의 보드 상태, 출력 : 정책(policies),가치(value)
   
-  5. self_play.py
+   self_play.py
   - self_play : 각 게임의 결과 history 리스트에 저장
   
-  6. train_network.py
-  7. evaluate_network.py
+  train_network.py
+ evaluate_network.py
   - evaluate_network : 모델 평가
   - update_best_player : 가장 좋은 모델 가중치 업데이트
   - 
