@@ -3,7 +3,7 @@
 <br/>
 :point_down: 프로젝트 명
 
-Pytorch 와 CUDA를 활용하여 Tic Tac Toe 모델을 직접 훈련시키고 시켜 자동 대국 AI 설계
+Pytorch 와 CUDA를 활용하여 Tic Tac Toe 모델을 직접 훈련시킨 자동 대국 AI 설계
 
 <br/>
 :point_down: 프로젝트 명 프로젝트 개발 환경
